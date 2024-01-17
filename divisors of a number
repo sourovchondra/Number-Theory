@@ -1,0 +1,38 @@
+// divisors of a number
+
+#include <bits/stdc++.h>
+using namespace std;
+#define el '\n'
+
+#define optimize() ios_base::sync_with_stdio(0);cin.tie(0);cout.tie(0);
+#define mem(a,b) memset(a,b,sizeof(a))
+
+const int mx=1e3+123;
+
+vector<int>cnt[mx];
+
+int main()
+{
+    int lim;cin>>lim;
+    for(int i=1;i<=lim;i++)
+    {
+        for(int j=i;j<=lim;j+=i)
+        {
+            cnt[j].push_back(i);
+        }
+    }
+
+    for(int k=1;k<=lim;k++)
+    {
+        cout<<k<<" :";
+        for(auto u:cnt[k])cout<<u<<" ";
+            cout<<el;
+        
+
+    }
+
+    
+    
+    return 0;
+        
+}
