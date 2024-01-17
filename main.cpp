@@ -1,3 +1,5 @@
+//Lecture -1 Harmonic Series
+
 #include <bits/stdc++.h>
 using namespace std;
 #define el '\n'
